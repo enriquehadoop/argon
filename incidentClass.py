@@ -39,7 +39,7 @@ class incident:
         else:
           return 0
         return result
-    def getDiffMinsHrs(self):
+    def getDiffMinsHrs(self): #calculate diff between 2 dates and return the result in Hrs
         date1 = selfStartDate
         date2 = self.endDate
         date1Aux = datetime.strptime(date1, '%m/%d/%y %H:%M:%S')
