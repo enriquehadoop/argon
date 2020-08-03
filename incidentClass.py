@@ -18,6 +18,14 @@ class incident:
           return 0
         return result
 
-
- 
-        
+    def getDiffSeconds(self):
+	date1 = selfStartDate
+        date2 = self.endDate
+        date1Aux = datetime.strptime(date1, '%m/%d/%y %H:%M:%S')
+        date2Aux = datetime.strptime(date2, '%m/%d/%y %H:%M:%S')
+        if date1Aux > date2Aux:
+          result = date1Aux - date2Aux
+        else:
+          return 0
+        return result
+  
